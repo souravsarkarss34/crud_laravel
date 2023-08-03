@@ -42,7 +42,7 @@ public function store(StudentCreateRequest $request)
 
         return redirect()->route('students.createForm')->with('success', 'Form data processed successfully.');
     } else {
-        // Handle the case when class information is not provided
+       
         foreach ($subjects as $subjectName) {
             $subject = new Subject();
             $subject->teacher = $teacher;
