@@ -13,6 +13,6 @@ class Subject extends Model
 
     public function students()
     {
-        return $this->morphMany(Student::class, 'detailable');
+        return $this->belongsTo(Student::class, 'detailable');
     }
 }
